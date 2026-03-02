@@ -50,13 +50,13 @@ export default function Header() {
                     {/* 3. ИКОНКИ / БУРГЕР (Моб) */}
                     <div className="flex justify-end items-center">
                         {/* Десктоп иконки */}
-                        <div className="hidden lg:flex items-center gap-4 xl:gap- 4 text-white">
+                        <div className="hidden lg:flex items-center gap-3.5 text-white">
                             {socialIcons.map((Icon, i) => (
                                 <Icon key={i} size={16} className="cursor-pointer hover:text-white/60 transition-colors" />
                             ))}
                         </div>
 
-                        {/* Мобильді бутерброд */}
+                        {/* Мобильный бутерброд */}
                         <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden flex flex-col gap-[7px] p-2 outline-none">
                             <motion.span
                                 animate={isOpen ? { rotate: 45, y: 9 } : { rotate: 0, y: 0 }}
