@@ -83,7 +83,7 @@ const Advantages = () => {
                                     whileHover={{ scale: 1.05 }}
                                     className="absolute bottom-[-60px] right-[-60px] w-[110%] h-[500px]"
                                 >
-                                    <Image src="/ai-mockup.png" alt="AI" fill className="object-contain object-right-bottom" />
+                                    <Image src="/ai-mockup.webp" alt="AI" fill className="object-contain object-right-bottom" />
                                 </motion.div>
                             </div>
 
@@ -135,7 +135,7 @@ const Advantages = () => {
                                     className="absolute bottom-[-50px] right-[-50px] w-[100%] h-[450px] mix-blend-lighten"
                                 >
                                     <Image
-                                        src="/templates-mockup.png"
+                                        src="/templates-mockup.webp"
                                         alt="Templates Mockup"
                                         fill
                                         className="object-contain object-right-bottom saturate-150 brightness-110"
@@ -192,7 +192,7 @@ const Advantages = () => {
                                     className="absolute inset-0 w-full h-full"
                                 >
                                     <Image
-                                        src="/seo-prediction.png"
+                                        src="/seo-predictiion.webp"
                                         alt="SEO ML Analysis"
                                         fill
                                         className="object-cover object-center saturate-[1.1] brightness-[0.8] group-hover:brightness-[1.1] group-hover:saturate-[1.4] transition-all duration-700"
@@ -248,7 +248,7 @@ const Advantages = () => {
                                     className="absolute inset-0 w-full h-full"
                                 >
                                     <Image
-                                        src="/HOME.jpeg"
+                                        src="/HOME.webp"
                                         alt="Integrations"
                                         fill
                                         className="object-cover object-center saturate-[1.2] brightness-[0.6] group-hover:brightness-[0.9] transition-all duration-1000"
@@ -305,7 +305,7 @@ const Advantages = () => {
                                     className="absolute inset-0 w-full h-full"
                                 >
                                     <Image
-                                        src="/Des.jpeg"
+                                        src="/Des.webp"
                                         alt="Responsive Design Screens"
                                         fill
                                         className="object-cover object-center saturate-[1.1] brightness-[0.6] group-hover:brightness-[0.9] transition-all duration-1000"
