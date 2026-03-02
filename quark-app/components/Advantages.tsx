@@ -45,30 +45,24 @@ const Advantages = () => {
                 </div>
 
                 {/* Bento Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
 
-                    {/* Card 1: AI Assistance (Large - 3 cols) */}
+
+                <div className="flex overflow-x-auto md:grid md:grid-cols-6 gap-6 pb-12 md:pb-0 scrollbar-hide snap-x snap-mandatory px-6 -mx-6 md:px-0 md:mx-0">
+
+                    {/* Card 1 */}
                     <motion.div
                         whileHover={{ y: -8 }}
-                        className="md:col-span-3 h-[520px] relative rounded-[40px] bg-black border border-white/[0.05] overflow-hidden group p-12"
-                    >
-                        {/* 1. Таза қара фон (Ешқандай сұр реңксіз) */}
+                        className="min-w-[85vw] md:min-w-full md:col-span-3 h-[380px] md:h-[520px] snap-center relative rounded-[32px] md:rounded-[40px] bg-black border border-white/[0.05] overflow-hidden group p-6 md:p-12"                    >
                         <div className="absolute inset-0 bg-black z-0" />
 
-                        {/* 2. Мәтін қабаты (Z-index жоғары, суреттің астында қалмайды) */}
                         <div className="relative z-30 flex flex-col h-full pointer-events-none">
-                            {/* Liquid Glass Badge: Core Logic */}
                             <div className="relative inline-flex items-center group/badge overflow-hidden rounded-full p-[1.2px] isolate mb-8 self-start">
-                                {/* 1. Сыртындағы жұмсақ Fuchsia жарқыл */}
                                 <div className="absolute inset-px bg-gradient-to-r from-fuchsia-600/40 via-purple-500/20 to-fuchsia-400/40 blur-sm opacity-60 group-hover/badge:opacity-100 transition duration-1000" />
 
-                                {/* 2. Негізгі Badge контейнері */}
                                 <div className="relative px-5 py-1.5 rounded-full border border-white/10 bg-black/60 backdrop-blur-2xl flex items-center gap-2.5 shadow-[0_0_15px_rgba(232,121,249,0.15)]">
 
-                                    {/* Анимацияланған ішкі сұйықтық (Subtle Liquid Glow) */}
                                     <div className="absolute inset-px bg-gradient-to-tr from-fuchsia-500/10 via-white/5 to-transparent opacity-70 group-hover/badge:opacity-100 transition-opacity duration-1000" />
 
-                                    {/* Liquid Indicator Dot */}
                                     <div className="relative w-1.5 h-1.5 rounded-full bg-fuchsia-500 shadow-[0_0_10px_#d946ef] after:absolute after:inset-px after:bg-white/30 after:rounded-full after:blur-[0.5px]" />
 
                                     <span className="relative z-10 text-[10px] font-montserrat font-bold uppercase tracking-[0.3em] bg-gradient-to-b from-fuchsia-300 via-white to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_0_5px_rgba(217,70,239,0.3)]">
@@ -87,15 +81,12 @@ const Advantages = () => {
                             </p>
                         </div>
 
-                        {/* 3. СУРЕТ: Ешқандай "палево" жиексіз (Radial Masking) */}
                         <div className="absolute inset-0 z-10">
 
-                            {/* РАДИАЛДЫ МАСКА: Суреттің жиектерін ортасынан бастап біртіндеп ҚАРА түске сіңіреді */}
                             <div className="absolute inset-0 z-20 pointer-events-none
             bg-[radial-gradient(circle_at_bottom_right,#00000000_10%,#000000_75%)]"
                             />
 
-                            {/* Қосымша Soft Edge: Сол жақтан келетін жұмсақ көлеңке */}
                             <div className="absolute inset-y-0 left-0 w-1/2 z-25 bg-gradient-to-r from-black via-black/40 to-transparent" />
 
                             <motion.div
@@ -115,15 +106,13 @@ const Advantages = () => {
                             </motion.div>
                         </div>
 
-                        {/* 4. Нәзік неонды Glow (Ambient Light) */}
                         <div className="absolute bottom-[-100px] right-[-100px] w-[500px] h-[500px] bg-fuchsia-600/10 blur-[120px] rounded-full z-5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                     </motion.div>
 
-                    {/* Card 2: Custom Templates (Large - 3 cols) */}
+                    {/* Card 2 */}
                     <motion.div
                         whileHover={{ y: -8 }}
-                        className="md:col-span-3 h-[520px] relative rounded-[40px] bg-black border border-white/[0.05] overflow-hidden group p-12"
-                    >
+                        className="min-w-[85vw] md:min-w-full md:col-span-3 h-[380px] md:h-[520px] snap-center relative rounded-[32px] md:rounded-[40px] bg-black border border-white/[0.05] overflow-hidden group p-6 md:p-12"                    >
                         {/* 1. Нағыз қара фон (Absolute Black) */}
                         <div className="absolute inset-0 bg-black z-0" />
 
@@ -159,11 +148,8 @@ const Advantages = () => {
                             </p>
                         </div>
 
-                        {/* 3. СУРЕТ: Сиқыр осында (Masking + Blending) */}
                         <div className="absolute inset-0 z-10">
 
-                            {/* Градиентті маска: Суреттің сол жағы мен жоғарғы жағын МҮЛДЕМ өшіру */}
-                            {/* Түсі тек BLACK болуы тиіс, сонда "ағармайды" */}
                             <div className="absolute inset-0 z-20 bg-gradient-to-r from-black via-black/40 to-transparent w-[60%]" />
                             <div className="absolute inset-0 z-20 bg-gradient-to-b from-black via-transparent to-transparent h-[50%]" />
 
@@ -174,7 +160,6 @@ const Advantages = () => {
                                 transition={{ duration: 1.2, ease: "circOut" }}
                                 className="absolute bottom-[-50px] right-[-50px] w-[100%] h-[450px] mix-blend-lighten"
                             >
-                                {/* mix-blend-lighten: Кез келген сұр фонды өшіріп, тек жарық (неон) бөлігін қалдырады */}
                                 <Image
                                     src="/templates-mockup.png"
                                     alt="Templates Mockup"
@@ -185,32 +170,23 @@ const Advantages = () => {
                             </motion.div>
                         </div>
 
-                        {/* 4. Ambient Glow: Суреттің астынан шығатын жұмсақ көк сәуле */}
                         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#3B82F6]/10 blur-[100px] rounded-full z-5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                     </motion.div>
 
-                    {/* Card 3: SEO Built-In (Small - 2 cols) */}
+                    {/* Card 3 */}
                     <motion.div
                         whileHover={{ y: -8 }}
-                        className="md:col-span-2 h-[420px] relative rounded-[32px] bg-black border border-white/[0.08] overflow-hidden group p-8"
-                    >
-                        {/* 1. LAYER: Background */}
+                        className="min-w-[85vw] md:min-w-full md:col-span-2 h-[380px] md:h-[420px] snap-center relative rounded-[24px] md:rounded-[32px] bg-black border border-white/[0.08] overflow-hidden group p-6 md:p-8"                    >
                         <div className="absolute inset-0 bg-black z-0" />
 
-                        {/* 2. LAYER: Text Content */}
                         <div className="relative z-30 flex flex-col h-full pointer-events-none">
-                            {/* Liquid Glass Badge: Key Metrics (Cyan Version) */}
                             <div className="relative inline-flex items-center group/badge overflow-hidden rounded-full p-[1.2px] isolate mb-8 self-start">
-                                {/* 1. Сыртындағы жұмсақ Cyan жарқыл */}
                                 <div className="absolute inset-px bg-gradient-to-r from-cyan-600/40 via-teal-500/20 to-cyan-400/40 blur-sm opacity-60 group-hover/badge:opacity-100 transition duration-1000" />
 
-                                {/* 2. Badge Container */}
                                 <div className="relative px-5 py-1.5 rounded-full border border-white/10 bg-black/60 backdrop-blur-2xl flex items-center gap-2.5 shadow-[0_0_15px_rgba(34,211,238,0.15)]">
 
-                                    {/* Анимацияланған ішкі сұйықтық */}
                                     <div className="absolute inset-px bg-gradient-to-tr from-cyan-500/10 via-white/5 to-transparent opacity-70 group-hover/badge:opacity-100 transition-opacity duration-1000" />
 
-                                    {/* Cyan Liquid Indicator Dot */}
                                     <div className="relative w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_#22d3ee] after:absolute after:inset-px after:bg-white/30 after:rounded-full after:blur-[0.5px]" />
 
                                     <span className="relative z-10 text-[10px] font-montserrat font-bold uppercase tracking-[0.3em] bg-gradient-to-b from-cyan-200 via-white to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_5px_rgba(34,211,238,0.3)]">
@@ -229,10 +205,8 @@ const Advantages = () => {
                             </p>
                         </div>
 
-                        {/* 3. LAYER: IMAGE */}
                         <div className="absolute inset-0 z-10">
 
-                            {/* Masking to blend edges */}
                             <div className="absolute inset-0 z-20 pointer-events-none
             bg-[radial-gradient(circle_at_60%_60%,transparent_40%,#000000_95%)]"
                             />
@@ -256,32 +230,23 @@ const Advantages = () => {
                             </motion.div>
                         </div>
 
-                        {/* 4. Background Glow */}
                         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-cyan-400/20 blur-[100px] rounded-full z-5 opacity-40 group-hover:opacity-100 transition-opacity duration-1000" />
                     </motion.div>
 
-                    {/* 4. САРТОЧКА: Ecosystem (API & Integrations) */}
+                    {/* Card 4 */}
                     <motion.div
                         whileHover={{ y: -8 }}
-                        className="md:col-span-2 h-[420px] relative rounded-[32px] bg-black border border-white/[0.08] overflow-hidden group p-8"
-                    >
-                        {/* 1. LAYER: Background Base */}
+                        className="min-w-[85vw] md:min-w-full md:col-span-2 h-[380px] md:h-[420px] snap-center relative rounded-[24px] md:rounded-[32px] bg-black border border-white/[0.08] overflow-hidden group p-6 md:p-8"                    >
                         <div className="absolute inset-0 bg-black z-0" />
 
-                        {/* 2. LAYER: Текст (Суреттің үстінде анық тұруы үшін z-30) */}
                         <div className="relative z-30 flex flex-col h-full pointer-events-none">
-                            {/* Liquid Glass Badge: Ecosystem (Deep Blue Version) */}
                             <div className="relative inline-flex items-center group/badge overflow-hidden rounded-full p-[1.2px] isolate mb-6 self-start">
-                                {/* 1. Сыртындағы жұмсақ Deep Blue жарқыл */}
                                 <div className="absolute inset-px bg-gradient-to-r from-blue-700/40 via-blue-500/20 to-indigo-400/40 blur-sm opacity-60 group-hover/badge:opacity-100 transition duration-1000" />
 
-                                {/* 2. Badge Container */}
                                 <div className="relative px-5 py-1.5 rounded-full border border-white/10 bg-black/60 backdrop-blur-2xl flex items-center gap-2.5 shadow-[0_0_15px_rgba(37,99,235,0.15)]">
 
-                                    {/* Анимацияланған ішкі сұйықтық */}
                                     <div className="absolute inset-px bg-gradient-to-tr from-blue-600/10 via-white/5 to-transparent opacity-70 group-hover/badge:opacity-100 transition-opacity duration-1000" />
 
-                                    {/* Deep Blue Liquid Indicator Dot */}
                                     <div className="relative w-1.5 h-1.5 rounded-full bg-blue-600 shadow-[0_0_10px_#2563eb] after:absolute after:inset-px after:bg-white/30 after:rounded-full after:blur-[0.5px]" />
 
                                     <span className="relative z-10 text-[10px] font-montserrat font-bold uppercase tracking-[0.3em] bg-gradient-to-b from-blue-200 via-white to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_5px_rgba(37,99,235,0.3)]">
@@ -300,16 +265,14 @@ const Advantages = () => {
                             </p>
                         </div>
 
-                        {/* 3. LAYER: FULL BACKGROUND IMAGE */}
                         <div className="absolute inset-0 z-10">
 
-                            {/* ЖҰМСАРТУ: Radial mask суреттің жиектерін қара фонға сіңіреді */}
                             <div className="absolute inset-0 z-20 pointer-events-none
             bg-[radial-gradient(circle_at_center,transparent_20%,#000000_90%)]"
                             />
 
-                            {/* Shadow Overlay: Сол жақтағы мәтін астын қарайту */}
                             <div className="absolute inset-y-0 left-0 w-2/3 z-25 bg-gradient-to-r from-black via-black/80 to-transparent" />
+
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 1.1 }}
@@ -328,34 +291,25 @@ const Advantages = () => {
                             </motion.div>
                         </div>
 
-                        {/* 4. Ambient Glow: Көкшіл неон */}
                         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-blue-500/10 blur-[100px] rounded-full z-5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                     </motion.div>
 
 
 
-                    {/* Card 5: Responsive Design (Small - 2 cols) */}
+                    {/* Card 5 */}
                     <motion.div
                         whileHover={{ y: -8 }}
-                        className="md:col-span-2 h-[420px] relative rounded-[32px] bg-black border border-white/[0.08] overflow-hidden group p-8"
-                    >
-                        {/* 1. LAYER: Background Pure Black */}
+                        className="min-w-[85vw] md:min-w-full md:col-span-2 h-[380px] md:h-[420px] snap-center relative rounded-[24px] md:rounded-[32px] bg-black border border-white/[0.08] overflow-hidden group p-6 md:p-8"                    >
                         <div className="absolute inset-0 bg-black z-0" />
 
-                        {/* 2. LAYER: Text Content (Z-index high, pointer-events-none) */}
                         <div className="relative z-30 flex flex-col h-full pointer-events-none">
-                            {/* Liquid Glass Badge: Adaptability (Purple Version) */}
                             <div className="relative inline-flex items-center group/badge overflow-hidden rounded-full p-[1.2px] isolate mb-6 self-start">
-                                {/* 1. Сыртындағы жұмсақ Purple жарқыл */}
                                 <div className="absolute inset-px bg-gradient-to-r from-purple-700/40 via-purple-500/20 to-fuchsia-400/40 blur-sm opacity-60 group-hover/badge:opacity-100 transition duration-1000" />
 
-                                {/* 2. Badge Container */}
                                 <div className="relative px-5 py-1.5 rounded-full border border-white/10 bg-black/60 backdrop-blur-2xl flex items-center gap-2.5 shadow-[0_0_15px_rgba(168,85,247,0.15)]">
 
-                                    {/* Анимацияланған ішкі сұйықтық */}
                                     <div className="absolute inset-px bg-gradient-to-tr from-purple-500/10 via-white/5 to-transparent opacity-70 group-hover/badge:opacity-100 transition-opacity duration-1000" />
 
-                                    {/* Purple Liquid Indicator Dot */}
                                     <div className="relative w-1.5 h-1.5 rounded-full bg-purple-500 shadow-[0_0_10px_#a855f7] after:absolute after:inset-px after:bg-white/30 after:rounded-full after:blur-[0.5px]" />
 
                                     <span className="relative z-10 text-[10px] font-montserrat font-bold uppercase tracking-[0.3em] bg-gradient-to-b from-purple-200 via-white to-purple-400 bg-clip-text text-transparent drop-shadow-[0_0_5px_rgba(168,85,247,0.3)]">
@@ -374,15 +328,12 @@ const Advantages = () => {
                             </p>
                         </div>
 
-                        {/* 3. LAYER: FULL BACKGROUND IMAGE (Design Cards 3D.jpeg) */}
                         <div className="absolute inset-0 z-10">
 
-                            {/* Radial Mask: Жиектерін қара фонға сіңіру */}
                             <div className="absolute inset-0 z-20 pointer-events-none
             bg-[radial-gradient(circle_at_center,transparent_20%,#000000_90%)]"
                             />
 
-                            {/* Shadow Overlay: Мәтін астын қарайту (сол жақтан оңға) */}
                             <div className="absolute inset-y-0 left-0 w-2/3 z-25 bg-gradient-to-r from-black via-black/80 to-transparent" />
 
                             <motion.div
@@ -402,7 +353,6 @@ const Advantages = () => {
                             </motion.div>
                         </div>
 
-                        {/* 4. Ambient Glow: Күлгін неон */}
                         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-purple-600/10 blur-[100px] rounded-full z-5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                     </motion.div>
 
