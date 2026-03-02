@@ -16,7 +16,7 @@ export default function Home() {
     /* Мұнда pt-[20vh] мобильдіде мәтінді экранның 1/4 бөлігіне түсіреді (идеалды орта) */
     pt-[25vh] sm:pt-[180px] md:pt-[230px] px-6 md:px-6">
 
-                    <motion.h2
+                    <h2
                         style={{
                             background: 'linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%)',
                             WebkitBackgroundClip: 'text',
@@ -24,30 +24,22 @@ export default function Home() {
                             backgroundClip: 'text',
                             color: 'transparent'
                         } as React.CSSProperties}
-                        className="text-[50px] md:text-[73px] font-montserrat font-normal uppercase leading-[0.99] tracking-[0.04em] text-center mx-auto mb-4 inline-block w-full transform scale-y-[1] md:scale-y-[1.1]"
-                        initial={{ opacity: 0, scale: 0.9, scaleY: 0.5 }}
-                        animate={{ opacity: 1, scale: 1, scaleY: 0.8 }}
-                        transition={{ duration: 1, ease: "easeOut" }}
+                        className="text-[50px] md:text-[73px] font-montserrat font-normal uppercase leading-[0.99] tracking-[0.04em] text-center mx-auto mb-4 inline-block w-full transform scale-y-[1] md:scale-y-[0.9]"
                     >
                         The Best Website Ever
-                    </motion.h2>
+                    </h2>
 
-                    <motion.h1
-                        className="
-        text-[45px] md:text-[80px] font-montserrat font-[400]
-        w-full max-w-[471px] mx-auto
-        leading-none tracking-[0.02em] text-white
-        inline-block transform scale-y-[0.85] md:scale-y-[0.86]
-        mb-5
-        /* Түзету: Мұндағы -mt-2 немесе -mt-4 мәнін реттеп көр */
-        -mt-4 md:-mt-6
-    "
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                    >
+                    <h1 className="
+    text-[45px] md:text-[80px] font-montserrat font-[400]
+    w-full max-w-[471px] mx-auto
+    leading-none tracking-[0.02em] text-white
+    inline-block transform scale-y-[0.85] md:scale-y-[0.86]
+    mb-5
+    /* Түзету: Мұндағы -mt-2 немесе -mt-4 мәнін реттеп көр */
+    -mt-4 md:-mt-6
+">
                         Scalable.
-                    </motion.h1>
+                    </h1>
 
 
                     <p className="
@@ -98,7 +90,7 @@ export default function Home() {
                     {/* Glow */}
                     <div className="absolute inset-0 pointer-events-none">
                         <Image
-                            src="/glow.png"
+                            src="/glow.webp"
                             alt="Background Glow"
                             fill
                             className="object-bottom object-contain brightness-125 saturate-150 scale-125"
@@ -109,7 +101,7 @@ export default function Home() {
                     {/* Robot */}
                     <motion.div className="relative w-full h-full">
                         <Image
-                            src="/robot.png"
+                            src="/robot.webp"
                             alt="Quark AI Robot"
                             fill
                             className="object-bottom object-contain"
@@ -121,3 +113,4 @@ export default function Home() {
         </main>
     );
 }
+
