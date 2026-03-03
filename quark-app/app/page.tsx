@@ -3,6 +3,8 @@ import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
 import Advantages from '@/components/Advantages';
 import Testimonials from '@/components/Testimonials';
+import Footer from '@/components/Footer';
+
 
 export default function Home() {
     return (
@@ -12,6 +14,7 @@ export default function Home() {
             <Marquee />
             <Advantages />
             <Testimonials />
+            <Footer />
         </main>
     );
 }
