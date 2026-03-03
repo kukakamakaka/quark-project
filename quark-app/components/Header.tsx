@@ -34,7 +34,7 @@ export default function Header() {
                             className="font-montserrat text-white uppercase font-medium text-[18px] tracking-[0.10em] hover:opacity-80 transition-all leading-none"
                             style={{ fontStretch: '110%' }}
                         >
-                            SITE NAME
+                            QUARK
                         </Link>
                     </div>
 

@@ -47,7 +47,7 @@ const Testimonials = () => {
                 className="absolute top-0 right-0 w-[40%] max-w-[500px] opacity-30 pointer-events-none z-0 object-contain"
             />
             <motion.img
-                src="/decor-bottom-left.webp"
+                src="/decor-bottom-leftt.webp"
                 alt=""
                 animate={{ y: [0, 15, 0] }}
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}

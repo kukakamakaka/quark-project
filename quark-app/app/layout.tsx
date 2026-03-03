@@ -1,8 +1,54 @@
+import type { Metadata, Viewport } from "next"; // Viewport қосылды
+import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 
-export const metadata = {
-    title: "Quark - AI Ecosystem",
-    description: "Future of Intelligence",
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    variable: "--font-montserrat",
+    weight: ["400", "500", "600", "700", "900"],
+    display: "swap",
+});
+
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-inter",
+    weight: ["300", "400", "500", "600"],
+    display: "swap",
+});
+
+export const viewport: Viewport = {
+    themeColor: "#020202",
+    width: "device-width",
+    initialScale: 1,
+};
+
+export const metadata: Metadata = {
+    title: "Quark — AI Intelligence Layer",
+    description: "Building the decentralized intelligence layer for the future of Web3 and AI ecosystem.",
+    keywords: ["AI", "Blockchain", "Decentralized", "Web3", "Quark"],
+    authors: [{ name: "Quark Foundation" }],
+    openGraph: {
+        title: "Quark — AI Intelligence Layer",
+        description: "Building the decentralized intelligence layer for the future.",
+        url: "https://quark-ai.vercel.app",
+        siteName: "Quark Ecosystem",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Quark AI Ecosystem Preview",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Quark — AI Intelligence Layer",
+        description: "Decentralized intelligence layer for the future.",
+        images: ["/og-image.png"],
+    },
 };
 
 export default function RootLayout({
@@ -11,14 +57,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
-        <head>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
-        </head>
-        <body className="antialiased bg-[#020202] text-white">
-        {children}
+        <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
+        <body className="antialiased bg-[#020202] text-white selection:bg-[#FF3BFF]/30 overflow-x-hidden">
+        <main className="min-h-screen flex flex-col relative">
+            {children}
+        </main>
         </body>
         </html>
     );
