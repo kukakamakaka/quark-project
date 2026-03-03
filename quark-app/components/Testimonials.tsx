@@ -9,7 +9,25 @@ const reviews = [
 ];
 
 const Testimonials = () => {
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": reviews.map((rev, index) => ({
+            "@type": "Review",
+            "position": index + 1,
+            "author": { "@type": "Person", "name": rev.author },
+            "reviewBody": rev.text,
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            }
+        }))
+    };
+
     return (
+
         <section className="relative w-full py-20 md:py-32 bg-[#020202] overflow-visible font-sans">
 
             {/* --- ДЕКОР ЭЛЕМЕНТТЕРІ (ЕКЕУІ ДЕ ҚАЙТТЫ) --- */}
@@ -114,7 +132,14 @@ const Testimonials = () => {
                     ))}
                 </div>
             </div>
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
         </section>
+
+
     );
 };
 
