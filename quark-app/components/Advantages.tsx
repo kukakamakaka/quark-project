@@ -6,7 +6,7 @@ const Advantages = () => {
     return (
         <section className="relative w-full py-24 bg-[#020202] overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#5C24FF]/10 blur-[120px] pointer-events-none" />
+            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[450px] bg-[#5C24FF]/10 blur-[120px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
 
