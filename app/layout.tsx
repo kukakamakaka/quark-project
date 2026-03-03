@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Quark — AI Intelligence Layer",
         description: "Building the decentralized intelligence layer for the future.",
-        url: "https://quark-ai.vercel.app",
+        url: "https://quark-project-nb5f.vercel.app/",
         siteName: "Quark Ecosystem",
         images: [
             {
