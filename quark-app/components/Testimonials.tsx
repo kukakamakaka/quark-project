@@ -23,7 +23,22 @@ const Testimonials = () => {
 
     return (
         <section className="relative w-full py-24 md:py-32 bg-[#020202] overflow-hidden font-sans">
-
+            {/* SEO Микроразметка  */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Product",
+                        "name": "Quark AI",
+                        "review": reviews.map(r => ({
+                            "@type": "Review",
+                            "reviewBody": r.text,
+                            "author": { "@type": "Person", "name": r.author }
+                        }))
+                    })
+                }}
+            />
             <motion.img
                 src="/decor-top-right.webp"
                 alt=""
@@ -41,14 +56,18 @@ const Testimonials = () => {
 
             <div className="max-w-4xl mx-auto px-6 relative z-10 flex flex-col items-center">
 
-                {/* LIQUID GLASS BADGE */}
-                <div className="relative inline-flex items-center group overflow-hidden rounded-full p-[1.5px] isolate mb-10">
-                    <div className="absolute inset-px bg-gradient-to-r from-purple-600/30 via-[#FF3BFF]/20 to-cyan-500/30 blur-sm opacity-50" />
-                    <div className="relative px-8 py-2.5 rounded-full border border-white/20 bg-black/60 backdrop-blur-3xl flex items-center gap-2.5 shadow-[0_0_20px_rgba(255,59,255,0.2)]">
-                        <div className="relative w-1.5 h-1.5 rounded-full bg-[#FF3BFF] shadow-[0_0_12px_#FF3BFF]" />
-                        <span className="text-[10px] font-bold uppercase tracking-[0.5em] bg-gradient-to-b from-[#FF3BFF] via-[#E0A8FF] to-[#FF3BFF] bg-clip-text text-transparent">
-                            Feedback
-                        </span>
+                {/* LIQUID GLASS BADGE - EXACT MATCH WITH FEATURES STYLE */}
+                <div className="relative inline-flex items-center group overflow-hidden rounded-full p-[1.5px] isolate mb-12">
+                    <div className="absolute inset-px bg-gradient-to-r from-purple-600/30 via-[#FF3BFF]/20 to-cyan-500/30 blur-sm opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300" />
+
+                    <div className="relative px-6 py-2 rounded-full border border-white/20 bg-black/60 backdrop-blur-3xl flex items-center gap-2.5 shadow-[0_0_20px_rgba(255,59,255,0.2)]">
+                        <div className="absolute inset-px bg-gradient-to-tr from-[#FF3BFF]/10 via-white/5 to-cyan-400/10 scale-125 opacity-70 group-hover:scale-100 group-hover:opacity-100 transition-all duration-1000" />
+
+                        <div className="relative w-2 h-2 rounded-full bg-[#FF3BFF] shadow-[0_0_12px_#FF3BFF] after:absolute after:inset-px after:bg-white/40 after:rounded-full after:blur-[1px]" />
+
+                        <span className="relative z-10 text-[10px] font-bold uppercase tracking-[0.5em] bg-gradient-to-b from-[#FF3BFF] via-[#E0A8FF] to-[#FF3BFF] bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,59,255,0.4)]">
+            Feedback
+        </span>
                     </div>
                 </div>
 

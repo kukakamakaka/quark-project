@@ -50,7 +50,7 @@ const Advantages = () => {
                     {/* Card 1 */}
                     <div className="min-w-[82vw] md:min-w-0 md:col-span-3 h-[380px] md:h-[520px] snap-center group">
                         <motion.div
-                            whileHover={{ y: -12 }} // Енді ол еркін көтеріледі, өйткені сыртқы group мышканы ұстап тұр
+                            whileHover={{ y: -12 }}
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             className="relative w-full h-full rounded-[32px] md:rounded-[40px] bg-black border border-white/[0.05] overflow-hidden p-6 md:p-12"
                         >
