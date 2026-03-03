@@ -1,39 +1,36 @@
-# Quark — AI-Powered Intelligence Layer (Web3 Ecosystem)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Тестовое задание на позицию **Frontend Developer (Next.js)**.  
-Проект представляет собой высокопроизводительный лендинг с использованием современных технологий визуализации и оптимизации.
+## Getting Started
 
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🚀 Стек технологий
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-* **Framework:** [Next.js 14/15](https://nextjs.org/) (App Router)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Animations:** [Framer Motion](https://www.framer.com/motion/)
-* **Icons:** [Lucide React](https://lucide.dev/)
-* **Optimization:** Next.js Font (Google Fonts local hosting), Next.js Image (.webp)
-* **Deployment:** Vercel
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## ✨ Ключевые особенности
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### 1. **High-End UI/UX Design**
-* **Glassmorphism & Bento Grid:** Современный интерфейс в стиле Web3/AI с использованием эффектов матового стекла и адаптивной сетки Bento.
-* **Liquid Animations:** Плавные микро-взаимодействия и градиентные свечения (glow effects) для премиального визуального опыта.
+## Learn More
 
-### 2. **Performance & Optimization**
-* **Lighthouse Score 90+:** Проект оптимизирован для быстрой загрузки. Использованы современные форматы изображений (.webp) и стратегия `next/font`.
-* **SEO Ready:** Настроены мета-теги (Title, Description, Keywords) и OpenGraph для корректного отображения в соцсетях.
+To learn more about Next.js, take a look at the following resources:
 
-### 3. **Advanced Functionality**
-* **Testimonials with JSON-LD:** Реализована микроразметка `Schema.org` для отзывов, что улучшает ранжирование в поисковых системах.
-* **Infinite Marquee:** Бесконечная бегущая строка на чистом Framer Motion.
-* **Stacking Cards:** Интерактивный слайдер отзывов с эффектом наслоения.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### 4. **Adaptive Design**
-* Полная адаптивность: от смартфонов (320px) до широкоформатных мониторов (1440px+).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🛠 Установка и запуск
+## Deploy on Vercel
 
-1. **Клонируйте репозиторий:**
-   ```bash
-   git clone [https://github.com/kukakamakaka/quark-project]
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
